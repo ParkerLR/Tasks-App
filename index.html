@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASKS APP</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Tasks App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <form class="form-inline my-2 my-lg-0">
+              <input name="search" id="search" class="form-control mr-sm-2" type="search" placeholder="search" aria-label="search">
+              <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+      </nav>
+
+
+
+
+      <div class="container p-4">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="task-form">
+                            <div class="form-group">
+                                 <input type="text"  id="name" placeholder="Tasks Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="description" cols="30" rows="10" class="form-control" placeholder="Tasks description"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block text-center ">
+                                Save Tasks
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-7">
+                        <table class="table table-bordered table-sm">
+                            <thead>
+                                <tr>
+                                    <td>ID</td>
+                                    <td>NAME</td>
+                                    <td>DESCRIPTION</td>
+                                </tr>
+                            </thead>
+                            <tbody id="tasks"></tbody>
+                        </table>
+            </div>
+        </div>
+      </div>
+      
+
+      <!-- pie de paguina -->
+      <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+          <p class="mb-0">Desarrollado por Lozano Avila Alan Eduardo</p>
+        </div>
+      </footer>
+
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="app.js"></script> 
+</body>
+
+</html>
