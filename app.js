@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*  $(document).ready(function () {
 
     console.log('HOLA'); // Mensaje de hola, manda un mensaje en consola que diga hola
 
@@ -14,6 +14,29 @@ $(document).ready(function () {
                 console.log(response);
             }
         });
-    }); // Corrección: Agrega el cierre de llaves aquí
+    });
 
+});
+
+ */
+
+$(document).ready(function() {
+
+    console.log('holis2');
+
+    $('#search').keyup((e) => {
+        let search = $('#search').val();
+
+
+
+        /*         $.ajax({
+                    url: 'task-search.php',
+                    data: {search},
+                    type: 'POST',
+                    success: function (response) {
+                        console.log(response);
+                    }
+                })
+         */
+    })
 });
